@@ -37,8 +37,8 @@ function attackButtonHandler(event){
         //disable buttons
     }
 
-    if (fungusHP < 0) {
-        fungusHP = 0
+    if (fungusHP < 50) {
+        fungusHP ++
     }
    
     let  = document.querySelector(".attack-btn arcane-sceptor")
@@ -53,5 +53,6 @@ function attackButtonHandler(event){
     // - Rendered to the DOM
     render ()
 }
+
 
 
